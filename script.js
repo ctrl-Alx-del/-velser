@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", beverages);
 
 
@@ -28,5 +28,24 @@ function AlkoholCheck() {
         console.log("Alkoholfri");
     }
 
+}
+*/
+
+document.addEventListener("DOMContentLoaded", timeADay)
+
+
+
+function timeADay() {
+    timer = new Date().getHours();
+
+    if (timer >= 5 && timer <= 10) {
+        console.log("Godmorgen");
+    } else if (timer >= 10 && timer <= 18) {
+        console.log("Goddag");
+    } else if (timer >= 18 && timer <= 24) {
+        console.log("Godaften")
+    } else {
+        console.log("Godnat");
+    }
 }
 
