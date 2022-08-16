@@ -29,7 +29,7 @@ function AlkoholCheck() {
     }
 
 }
-*/
+
 
 document.addEventListener("DOMContentLoaded", timeADay)
 
@@ -47,5 +47,34 @@ function timeADay() {
     } else {
         console.log("Godnat");
     }
+}
+
+*/
+
+document.addEventListener("DOMContentLoaded", clickAble);
+let attempts = 0;
+
+
+function clickAble() {
+    const button = document.querySelector("#knap");
+    button.addEventListener("click", guessNumber);
+}
+
+
+function guessNumber() {
+    let tal = document.querySelector("#tal").value;
+    randomNum = Math.round(Math.random() * 10);
+    attempts++;
+
+    console.log(randomNum);
+
+    if (tal == randomNum) {
+        alert(randomNum + " var rigtigt! Du har brugt " + `${attempts} forsøg` + " Prøv igen med et nyt tal :)");
+    } else if (tal > randomNum) {
+        alert("Øv! " + tal + " var for højt. Prøv igen :)");
+    } else {
+        alert("Øv! " + tal + " var for lavt. Prøv igen :)");
+    }
+
 }
 
