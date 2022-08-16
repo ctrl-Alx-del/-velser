@@ -1,0 +1,19 @@
+img {
+    width: 30%;
+    border: solid black;
+}
+
+.mindre {
+    width: 13%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.flyt {
+    position: relative;
+    left: -20em;
+}
